@@ -20,13 +20,21 @@
             background-color: #ddd;
             cursor: pointer;
         }
+
+        .wrapper {
+            flex-direction: row;
+            width: 400px;
+            height: 200px;
+        }
     </style>
 </head>
 
 <body>
-    <input type="text" id="pattern" placeholder="Enter regex pattern">
-    <button id="save">Save</button>
-    <script src="popup.js"></script>
+    <div class="wrapper">
+        <input type="text" id="pattern" placeholder="Enter regex pattern">
+        <button id="save">Save</button>
+        <script src="popup.js"></script>
+    </div>
 </body>
 
 </html>

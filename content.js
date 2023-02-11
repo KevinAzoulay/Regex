@@ -1,5 +1,5 @@
 chrome.storage.sync.get("pattern", function (data) {
-  if (!data.pattern) return;
+  if (!data.pattern) return console.log("no data");
   const regex = new RegExp(data.pattern, "g");
 
   const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
